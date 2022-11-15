@@ -118,26 +118,27 @@ padding-top: 94px;
 
 }
 .header-contacts-item{
-    display: flex;
-    align-items: center;
+
+
 }
 
 .header-nav-contacts {
-    display: inline-block;
+    display: flex;
+    align-items: center;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: currentColor;
+    color: var(--color-grey);
 
 }
-.header-contacts-item:hover,
-.header-contacts-item:focus{
+.header-nav-contacts:hover,
+.header-nav-contacts:focus{
     color: var(--color-blue);
 }
-.header-contacts-item:hover .contacts-list-icon,
-.header-contacts-item:focus .contacts-list-icon{
-    fill: currentColor;
+.header-nav-contacts:hover .contacts-list-icon,
+.header-nav-contacts:focus .contacts-list-icon{
+    fill: var(--color-blue);
 }
 
 
@@ -411,18 +412,11 @@ fill: var(--color-white);
 }
 
 .clients-item {
-    width: 170px;
-        height: 92px;
-        border: 1px solid #AFB1B8;
-        border-radius: 4px;
-        gap: 30px;
-       display: flex;
-       align-items: center;
-       justify-content: center;
+    
 }
 
-.clients-item:hover,
-.clients-item:focus{
+.clients-link:hover,
+.clients-link:focus{
     border-color: #2196F3;
 }
 
@@ -430,12 +424,19 @@ fill: var(--color-white);
     fill: #AFB1B8;
 
 }
-.clients-item:hover .clients-icon,
-.clients-item:focus .clients-icon {
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
     fill: #2196F3;
 }
 .clients-link {
-  
+    width: 170px;
+        height: 92px;
+        border: 1px solid #AFB1B8;
+        border-radius: 4px;
+        gap: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 }
 /* ---------------footer---------------- */
 
@@ -527,13 +528,19 @@ margin-left: 70px;
     background-color: rgba(255, 255, 255, 0.1);
    
 }
-.soc-list-item:hover,
-.soc-list-item:focus{
+.soc-link:hover,
+.soc-link:focus{
     background-color: #2196F3;
 }
 
 .soc-link {
-
+display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
 
 }
 
