@@ -21,7 +21,7 @@
         <nav class="navigation">
           <ul class="nav-list">
             <li class="list">
-              <a href="./index.html" class="header-nav-link links current ">Студія</a>
+              <a href="./index.html"  class="header-nav-link links current-studio">Студія</a>
             </li>
             <li class="list">
               <a href="./portfolio.html" class="header-nav-link links">Портфоліо</a>
@@ -52,7 +52,7 @@
       <section class="hero">
         <div class="container hero-container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="hero-btn">Замовити послугу</button>
+          <button  type="button" class="hero-btn" data-modal-open>Замовити послугу</button>
         </div>
       </section>
       <!-- Особливості -->
@@ -109,7 +109,9 @@
           <ul class="jobs-list">
             <li class="jobs-list-item list">
               <img src="./images/code.jpg" width="370" alt="людина набирає код" class="jobs-list-photo" />
+              <h3 class="jobs-photo-text">Десктопні додатки</h3>
             </li>
+            
             <li class="jobs-list-item list">
               <img
                 src="./images/qa.jpg"
@@ -117,6 +119,7 @@
                 alt="людина дивиться в ноутбук та телефон"
                 class="jobs-list-photo"
               />
+              <h3 class="jobs-photo-text">Мобільні додатки</h3>
             </li >
             <li class="jobs-list-item list">
               <img
@@ -125,6 +128,7 @@
                 alt="людина дивиться на планшет на екрані палітра кольорів"
                 class="jobs-list-photo"
               />
+              <h3 class="jobs-photo-text">Дизайнерські рішення</h3>
             </li>
           </ul>
         </div>
@@ -370,5 +374,17 @@
         
       </div>
     </footer>
+    <div   class="backdrop is-hidden" data-modal>
+      
+        <div class="modal">
+          <button  type="button" class="modal-button" data-modal-close>
+            <svg class="close-modal"width="11" height="11">
+              <use href="./images/icons.svg#icon-close-modal" ></use>
+            </svg>
+          </button>
+        </div>
+      
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
