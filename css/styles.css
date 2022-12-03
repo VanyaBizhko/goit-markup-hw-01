@@ -989,6 +989,8 @@ overflow: hidden;
         align-items: center;
         justify-content: center;
         fill: transparent;
+        background-color:#FFFFFF
+        transition: background-color var(--transition), fill var(--transition), border var(--transition);
         
         
 }
