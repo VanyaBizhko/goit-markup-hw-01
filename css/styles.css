@@ -625,6 +625,11 @@ fill: #FFFFFF;
     border-radius: 4px;
     padding: 15px 16px;
     color: #FFFFFF;
+    transition: border var(--transition);
+}
+.footer-input:focus {
+    border: 1px solid #2196F3;
+
 }
 .footer-send-btn{
     width: 200px;
@@ -904,8 +909,8 @@ overflow: hidden;
     border-radius: 4px;
     padding-left: 40px;
     padding-right: 12px;
-    fill: #212121;
-    transition: border var(--transition), fill var(--transition);
+   
+    transition: border var(--transition); 
 }
 .modal-input:focus{
     border: 1px solid #2196F3;
@@ -932,7 +937,8 @@ overflow: hidden;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-
+    fill: #212121;
+    transition: fill var(--transition);
 }
 
 .modal-comment{
@@ -965,7 +971,7 @@ overflow: hidden;
 }
 .policy-area{
     margin-top: 20px;
-    text-align: center;
+    
 
 }
 .check-text{
@@ -977,8 +983,10 @@ overflow: hidden;
         color: #757575;
         display: flex;
             align-items: center;
+                justify-content: center;
         
 }
+
 .check-text span{
     width: 16px;
         height: 15px;
@@ -989,17 +997,17 @@ overflow: hidden;
         align-items: center;
         justify-content: center;
         fill: transparent;
-        background-color:#FFFFFF
-        transition: background-color var(--transition), fill var(--transition), border var(--transition);
-        
-        
+        background-color:#FFFFFF;
+        transition: background-color var(--transition), fill var(--transition) , border var(--transition);
 }
+
+
 .modal-check:checked + .check-text span{
     background-color: #2196F3;
-    border:none;
+    border:2px solid transparent;
     fill: #FFFFFF;
 }
-.check-mark{
+.check-mark {
     
 }
 /* .check-text::before{
@@ -1020,6 +1028,7 @@ border: none;
 } */
 .terms{
     color: var(--color-blue);
+    margin-left: 5px;
 }
 .send-btn{
     
